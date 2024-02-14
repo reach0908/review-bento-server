@@ -12,6 +12,8 @@ import { APP_PIPE } from '@nestjs/core';
 import { BentoReviewsModule } from './bento-reviews/bento-reviews.module';
 import { ApplicationsModule } from './applications/applications.module';
 import { ApplicationReviewsModule } from './application-reviews/application-reviews.module';
+import { CategoriesModule } from './categories/categories.module';
+import { UsersModule } from './users/users.module';
 
 @Module({
   imports: [
@@ -27,6 +29,8 @@ import { ApplicationReviewsModule } from './application-reviews/application-revi
     BentoReviewsModule,
     ApplicationsModule,
     ApplicationReviewsModule,
+    CategoriesModule,
+    UsersModule,
   ],
   controllers: [AppController],
   providers: [
