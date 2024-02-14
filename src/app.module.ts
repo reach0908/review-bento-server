@@ -10,6 +10,8 @@ import { MongooseModule } from '@nestjs/mongoose';
 import mongoose from 'mongoose';
 import { APP_PIPE } from '@nestjs/core';
 import { BentoReviewsModule } from './bento-reviews/bento-reviews.module';
+import { ApplicationsModule } from './applications/applications.module';
+import { ApplicationReviewsModule } from './application-reviews/application-reviews.module';
 
 @Module({
   imports: [
@@ -23,6 +25,8 @@ import { BentoReviewsModule } from './bento-reviews/bento-reviews.module';
     }),
     BentosModule,
     BentoReviewsModule,
+    ApplicationsModule,
+    ApplicationReviewsModule,
   ],
   controllers: [AppController],
   providers: [
