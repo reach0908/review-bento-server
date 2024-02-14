@@ -14,6 +14,7 @@ import { ApplicationsModule } from './applications/applications.module';
 import { ApplicationReviewsModule } from './application-reviews/application-reviews.module';
 import { CategoriesModule } from './categories/categories.module';
 import { UsersModule } from './users/users.module';
+import { BentoCompartmentsModule } from './bento-compartments/bento-compartments.module';
 
 @Module({
   imports: [
@@ -31,6 +32,7 @@ import { UsersModule } from './users/users.module';
     ApplicationReviewsModule,
     CategoriesModule,
     UsersModule,
+    BentoCompartmentsModule,
   ],
   controllers: [AppController],
   providers: [
